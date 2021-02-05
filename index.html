@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hipercard</title>
+	<link rel="stylesheet" type="text/css" href="hipercard_style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+</head>
+<body>
+	<header id="header">
+		<div class="img-header">
+			<img src="hipercard_img/Hipercard_logo.png"/>
+		</div>
+	</header>
+
+	<section class="form_section">
+      <form action="index.html" class="login-form">
+
+        <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Username"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="password">
+          <span data-placeholder="Password"></span>
+        </div>
+
+        <input type="submit" class="logbtn" value="Login">
+
+        <div class="bottom-text">
+          <a href="#"><span>esqueci minha senha</span></a>
+        </div>
+
+      </form>
+
+	</section>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+</body>
+</html>
