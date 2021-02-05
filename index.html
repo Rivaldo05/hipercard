@@ -3,11 +3,11 @@
 <head>
 	<title>hipercard</title>
 	<link rel="stylesheet" type="text/css" href="hipercard_style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 </head>
+
 <body>
 	<header id="header">
 		<div class="img-header">
@@ -41,11 +41,13 @@
       <script type="text/javascript">
       $(".txtb input").on("focus",function(){
         $(this).addClass("focus");
+        $(".img-header").addClass("none_header");
       });
 
       $(".txtb input").on("blur",function(){
         if($(this).val() == "")
         $(this).removeClass("focus");
+        $(".img-header").removeClass("none_header");
       });
 
       </script>

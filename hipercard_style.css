@@ -7,13 +7,15 @@
 }
 
 body{
-	height: 100vh;
+	min-height: 100vh;
 }
-
+.none_header{
+  display: none;
+}
 .img-header{
 	width: 35%;
 	max-width: 160px;
-	background-color: blue;
+	/*background-color: blue;*/
 }
 
 .img-header img{
@@ -22,7 +24,7 @@ body{
 }
 
 #header{
-	background-color: pink;
+	/*background-color: pink;*/
 	width: 100vw;
 	height: 20vh;
 	display: flex;
