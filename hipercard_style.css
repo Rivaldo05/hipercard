@@ -10,6 +10,11 @@ body{
 	min-height: 100vh;
 }
 .none_header{
+  height: 20px;
+  display: none;
+}
+
+.none_header img{
   display: none;
 }
 .img-header{
@@ -26,7 +31,7 @@ body{
 #header{
 	/*background-color: pink;*/
 	width: 100vw;
-	height: 20vh;
+	height: 15vh;
 	display: flex;
 	align-items: center;
     justify-content: flex-start;
